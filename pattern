@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int n1,i;
+    scanf("%d %d",&n1,&i);
+    int value1,value2;
+    scanf("%d %d",&value1,&value2);
+    int store;
+    scanf("%d",&store);
+     
+    for(i=1 ; i < n1 ; i++)
+    {
+        printf("%d",value1);
+        store=value1+value2;
+        value1=value2;
+        value2=store;
+    }
+    return 0;
+}
